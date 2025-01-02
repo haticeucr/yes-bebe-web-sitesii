@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>YES BEBE</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+  <!-- header sınıfı başlangıç --> 
+   
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="../images/logo.png" alt="logo" 
+        ></a>
+        <nav class="navbar">
+            <a href="../index.html" class="">Ana sayfa</a>
+            <a href="../bebek/bebekodaları.html" class="">Bebek odaları</a>
+            <a href="../genc/gencodaları.html" class="">Genç odaları</a>
+            <a href="../yatak/yatakodaları.html" class="">Yatak odaları</a>
+            <a href="../mobilya/mobilya.html" class="">Mobilya</a>
+            <a href="../özel/özeltasarım.html"  class="">Özel Tasarım</a>
+        </nav>
+
+        <div class="buttons">
+            <button id="cart-btn">
+                <i class="fa-solid fa-phone"></i>
+              </button>
+          </div>
+          
+    </header>
+    <!-- header sınıfı bitiş--> 
+
+    <!-- home sınıfı başlangıç-->
+    <main class="grid-container">
+      <!-- Takım 1 -->
+      <div class="card">
+          <img src="../images/mobilya/dolap.jpeg" alt="Takım 1">
+          <h3>Dolap</h3>
+          <p>İsteğe göre sürgülü yapılır</p>
+          <button onclick="showDetails(6)">Detayları Gör</button>
+      </div>
+      <!-- Takım 2 -->
+      <div class="card">
+          <img src="../images/mobilya/yatak.jpeg" alt="Takım 2">
+          <h3>Yatak</h3>
+          <p>Ekstra olarak yavru eklenebilir</p>
+          <button onclick="showDetails(6)">Detayları Gör</button>
+      </div>
+      <!-- Takım 3 -->
+      <div class="card">
+          <img src="../images/mobilya/çalışma masası.jpeg" alt="Takım 3">
+          <h3>Çalışma Masası</h3>
+          
+          <button onclick="showDetails(6)">Detayları Gör</button>
+      </div>
+      <!-- Takım 4 -->
+      <div class="card">
+          <img src="../images/mobilya/şifonyer.jpeg" alt="Takım 4">
+          <h3>Şifonyer</h3>
+          
+          <button onclick="showDetails(6)">Detayları Gör</button>
+      </div>
+      <!-- Takım 5 -->
+      <div class="card">
+          <img src="../images/mobilya/komidin.jpeg" alt="Takım 5">
+          <h3>Komodin</h3>
+
+          <button onclick="showDetails(6)">Detayları Gör</button>
+      </div>
+      <!-- Takım 6 -->
+      <div class="card">
+          <img src="../images/mobilya/makyaj masası.jpeg" alt="Takım 6">
+          <h3>Makyaj mmasası</h3>
+          <button onclick="showDetails(6)">Detayları Gör</button>
+      </div>
+      <!-- Takım 7 -->
+      <div class="card">
+        <img src="../images/mobilya/beşik.jpeg" alt="Takım 6">
+        <h3>Beşik</h3>
+
+        <button onclick="showDetails(6)">Detayları Gör</button>
+      </div>
+      
+    
+  </main>
+  <script src="../scripts.js"></script>
+    <!-- home sınıfı bitiş--> 
+    
+    
+     <!--! contact section start  -->
+
+     <div class="content-container">
+      <div  class="content">
+              <div class="adres-detayı">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <div class="topic">Adres</div>
+                  <div class="text">İstanbul</div>
+                  <div class="text">Türkiye</div>
+              </div>
+              <div class="telefon-detayı">
+                  <i class="fas fa-phone-alt"></i>
+                  <div class="topic">Telefon</div>
+                  <div class="text">Yaşar Uçar</div>
+                  <div class="text">+90 555 555 55 55</div>
+                  <div class="text">Erkan Uçar</div>
+                  <div class="text">+90 555 555 55 55</div>
+                  <div class="text">Serkan Uçar</div>
+                  <div class="text">+90 555 555 55 55</div>
+              </div>
+              <div class="sosyal-medya">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+              </div>
+
+      </div>
+  </div>
+
+  <!--! contact section end  -->
+  </body>
+  </html>

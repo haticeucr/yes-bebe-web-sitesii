@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+@import './bebekodası.css';
+
+
+
+:root {
+    --main-color: #ff71db;
+    --black-color: #000000;
+    --border: 0.1rem solid rgba(255, 255, 255, 0.4);
+  }
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s ease;
+}
+
+/*! base html codes */
+html{
+    font-size: 62,5%;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: rgb(255, 184, 236);
+    height: 300vh;
+}
+section{
+    padding: 3.5rem 7%;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 10rem;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: rgb(255, 183, 219);
+    cursor: pointer;
+}
+
+/*! header başlangıç */
+.header .logo img {
+    height: 5rem;
+    border-radius: 3rem;
+}
+
+.header{
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    margin: 2rem 7%;
+    border-radius: 30rem;
+    box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .navbar a{
+    margin: 0 1rem;
+    font-size: 1rem;
+    color: black;
+    border-bottom: 0.1rem solid transparent;
+}
+
+.header .navbar a:hover{
+    border-bottom: 0.1rem solid transparent;
+    border-color: rgb(0, 0, 0);
+    padding-bottom: 0.2rem;
+}
+
+.header .buttons button{
+    cursor: pointer;
+    margin-left: 2rem;
+    font-size: 1.2rem;
+    background-color: transparent;
+}
+/*! header bitiş */
+
+/*! home başlangıç */
+.home{
+    min-height: 100vh;
+    background: url(../images/home.jpg) 
+    no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 1rem;
+    display: flex;    
+    align-items: center;
+}
+
+.home .content{
+    max-width: 60rem;
+}
+.home .content h3{
+    font-size: 3rem;
+    color: black;
+}
+.home .content p{
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1rem 0;
+    color: #000000;
+}
+/*! home bitiş */
+
+/*! menu başlangıç */
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+.menu .box-container .box{
+    padding: 3rem;
+    background-color: #ffffff;
+    border-radius: 4rem;
+    background-color: #ffffff;
+    min-height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.menu .box-container .box img{
+    width: 50%;
+    object-fit: cover;
+}
+.menu .box-container .box .menu-category{
+    font-size: 1.5rem;
+    text-transform: lowercase;
+}
+.menu .box-container .box .box-head .btn{
+    margin-top: 0.5rem;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 15rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.menu .box-container .box h1{
+    padding: 0.5rem;
+}
+.menu .box-container .box h3{
+    font-size: 2rem;
+    padding: 0.5rem;
+}
+.menu .box-container .box h2{
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+/*! menu bitiş */
+
+/*! contact start  */
+
+.content-container{
+    display: grid;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 20px 60px 30px 40px;
+}
+.content-container .content{
+    display: flex;
+    align-items: center;
+    
+}
+
+.content .adres-detayı{
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding-left: 20%;
+}
+.content .telefon-detayı{
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding-left: 20%;
+}
+.content  i{
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: rgb(255, 101, 101);
+}
+.content  .topic{
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: rgb(255, 140, 140);
+}
+
+.sosyal-medya{
+    width: 30%;
+    line-height: 4rem;
+    margin: 2rem;
+    font-size: 2rem;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 100%;
+}
+.sosyal-medya a{
+    color: rgb(255, 101, 101);
+    margin-bottom: 5%;
+    padding-left: 60%;
+    font-size: 3rem;
+}
+  /*! contact end  */
+/*! Ana sayfa css bitiş */
+
+  /*! bebek odası css başlangıç */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 183, 219);;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 sütun düzeni */
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    width: 300px; /* Kartın genişliği */
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+.card img {
+    width: 100%;
+    height: auto;
+}
+.card h3 {
+    margin: 15px 0;
+    color: #333;
+}
+
+
+.card button {
+    background-color: rgb(255, 183, 219);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.card button:hover {
+    background-color: rgb(255, 127, 191);
+}
+
+/* Ekran boyutu mobil cihazlar için */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Mobilde tek sütun */
+    }
+}
+
+  /*! bebek odası css bitiş */
+
+  /*! genç odası css başlangıç */
+  /*! genç odası css bitiş */
+
+  /*! yatak odası css başlangıç */
+  /*! yatak odası css bitiş */
+
+  /*! mobilya css başlangıç */
+  /*! mobilya css bitiş */
+
+  /*! özel tasarım css başlangıç */
+  .home1{
+    min-height: 100vh;
+    background: url(../images/özel1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 1rem;
+    display: flex;    
+    align-items: center;
+}
+
+.home1 .content2{
+    max-width: 60rem;
+}
+.home1 .content2 h1{
+    font-size: 3rem;
+    color: black;
+}
+.home1 .content2 h2{
+    font-size: 3rem;
+    color: black;
+}
+.home1 .content2 h3{
+    font-size: 3rem;
+    color: black;
+}
+
+  /*! özel tasarım css başlangıç */
